@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Soundboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-container">
+    <header class="app-header">
+        <div class="brand">
+            <div class="logo-icon">
+                <img src="https://minecraft.wiki/images/Grass_Block_JE2.png?f73b1" alt="Grass Block">
+            </div>
+            <div>
+                <h1>Minecraft Soundboard</h1>
+                <p class="subtitle">12 iconic Minecraft sounds</p>
+            </div>
+        </div>
+        <div class="global-controls">
+            <div class="volume-control">
+                <span class="volume-label">VOLUME</span>
+                <input type="range" id="volume-slider" min="0" max="100" value="80" class="volume-slider" aria-label="Volume">
+                <span id="volume-value">80%</span>
+            </div>
+            <canvas id="spectrum" width="200" height="50"></canvas>
+            <button id="stop-all" class="btn btn-danger">
+                <span>STOP ALL</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="sound-grid">
+        <button class="sound-card size-medium" data-sound="1">
+            <div class="sound-icon">⭐</div>
+            <span class="sound-name">XP ORB</span>
+            <span class="sound-meta">Experience</span>
+        </button>
+        <button class="sound-card size-large" data-sound="2">
+            <div class="sound-icon">🔔</div>
+            <span class="sound-name">DOOR OPEN</span>
+            <span class="sound-meta">Creaky Door</span>
+        </button>
+        <button class="sound-card size-small" data-sound="3">
+            <div class="sound-icon">💀</div>
+            <span class="sound-name">DEATH</span>
+            <span class="sound-meta">Player Death</span>
+        </button>
+        <button class="sound-card size-medium" data-sound="4">
+            <div class="sound-icon">🔨</div>
+            <span class="sound-name">BLOCK BREAK</span>
+            <span class="sound-meta">Breaking Blocks</span>
+        </button>
+        <button class="sound-card size-small" data-sound="5">
+            <div class="sound-icon">⚡</div>
+            <span class="sound-name">LASER BLAST</span>
+            <span class="sound-meta">Retro Pew!</span>
+        </button>
+        <button class="sound-card size-large" data-sound="6">
+            <div class="sound-icon">🎯</div>
+            <span class="sound-name">RETRO JUMP</span>
+            <span class="sound-meta">Bouncy!</span>
+        </button>
+        <button class="sound-card size-medium" data-sound="7">
+            <div class="sound-icon">🪙</div>
+            <span class="sound-name">COIN COLLECT</span>
+            <span class="sound-meta">Cha-Ching!</span>
+        </button>
+        <button class="sound-card size-small" data-sound="8">
+            <div class="sound-icon">💫</div>
+            <span class="sound-name">POWER UP</span>
+            <span class="sound-meta">Level Up!</span>
+        </button>
+        <button class="sound-card size-large" data-sound="9">
+            <div class="sound-icon">💥</div>
+            <span class="sound-name">CREEPER HISS</span>
+            <span class="sound-meta">Watch Out!</span>
+        </button>
+        <button class="sound-card size-medium" data-sound="10">
+            <div class="sound-icon">💾</div>
+            <span class="sound-name">LEVEL UP</span>
+            <span class="sound-meta">Achievement</span>
+        </button>
+        <button class="sound-card size-small" data-sound="11">
+            <div class="sound-icon">🎵</div>
+            <span class="sound-name">NOTE PLING</span>
+            <span class="sound-meta">Note Block</span>
+        </button>
+        <button class="sound-card size-medium" data-sound="12">
+            <div class="sound-icon">🌊</div>
+            <span class="sound-name">WATER SPLASH</span>
+            <span class="sound-meta">Splash Down</span>
+        </button>
+    </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
